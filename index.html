@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travlog - Travel & Tour</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- CSS Files - SMACSS Structure -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <!-- Theme -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- Base -->
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <!-- Layout -->
+    <link rel="stylesheet" href="assets/css/button.css" />
+    <!-- Modules: Button -->
+    <link rel="stylesheet" href="assets/css/modules.css" />
+    <!-- Modules -->
+    <link rel="stylesheet" href="assets/css/state.css" />
+    <!-- State -->
+  </head>
+  <body>
+    <!-- Decorative Blur Element - Top Left -->
+    <div class="orange-decoration orange-decoration--top-left"></div>
+
+    <!-- Header Section -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <!-- Logo -->
+          <div class="logo">
+            <img
+              src="assets/images/logo.svg"
+              alt="Travlog Logo"
+              class="logo__icon"
+            />
+          </div>
+
+          <!-- Navigation -->
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link is-active">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#discover" class="nav__link">Discover</a>
+              </li>
+              <li class="nav__item">
+                <a href="#special-deals" class="nav__link">Special Deals</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+
+            <!-- Auth Buttons -->
+            <div class="auth-buttons">
+              <button class="btn btn--login">Log In</button>
+              <button class="btn btn--primary">Sign Up</button>
+            </div>
+          </nav>
+
+          <!-- Mobile Menu Toggle -->
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span class="mobile-menu-toggle__bar"></span>
+            <span class="mobile-menu-toggle__bar"></span>
+            <span class="mobile-menu-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay"></div>
+
+    <!-- Main Content -->
+    <main class="home-wrapper">
+      <!-- Hero Section -->
+      <div class="position-relative">
+        <section class="hero" id="home">
+          <div class="container">
+            <div class="hero__wrapper">
+              <!-- Hero Content (Left Side) -->
+              <div class="hero__content">
+                <div class="hero__badge">
+                  <span class="hero__badge-text">Explore the world!</span>
+
+                  <img
+                    src="assets/images/hero/backpack-icon.svg"
+                    alt="Backpack icon"
+                    class="hero__badge-text"
+                    width="24"
+                    height="24"
+                  />
+                </div>
+
+                <h1 class="hero__title">
+                  Travel
+                  <span class="hero__title--accent">top destination</span>
+                  <span class="hero__title--accent-2">of the world</span>
+                </h1>
+
+                <p class="hero__description">
+                  We always make our customer happy by providing as many choices
+                  as possible
+                </p>
+
+                <div class="hero__actions">
+                  <button class="btn btn--primary">Get Started</button>
+                  <button class="btn btn--ghost">
+                    <img
+                      src="assets/images/hero/play-icon.svg"
+                      alt="Play"
+                      class="btn__icon"
+                      width="20"
+                      height="20"
+                    />
+                    Watch Demo
+                  </button>
+                </div>
+              </div>
+
+              <!-- Hero Images (Right Side) -->
+              <div class="hero__images">
+                <!-- Users badge -->
+                <button class="hero__users-btn">
+                  <img
+                    src="assets/images/hero/add-user.svg"
+                    alt="Add User"
+                    class="hero__users-btn-icon"
+                  />
+                </button>
+
+                <!-- Image Grid -->
+                <div class="hero__image-grid">
+                  <img
+                    src="assets/images/hero/layer.svg"
+                    alt="Layer"
+                    class="hero__layer"
+                  />
+                  <div class="hero__image hero__image--1">
+                    <img
+                      src="assets/images/hero/hero-1.png"
+                      alt="Santorini Greece"
+                    />
+                    <button class="hero__send-btn">
+                      <img
+                        src="assets/images/hero/send.svg"
+                        alt="Send"
+                        class="hero__send-btn-icon"
+                      />
+                    </button>
+                  </div>
+                  <div class="hero__image hero__image--2">
+                    <img
+                      src="assets/images/hero/hero-3.png"
+                      alt="Traveler with backpack"
+                    />
+                    <!-- Top Places badge -->
+                    <div class="hero__badge-places">
+                      <img
+                        src="assets/images/hero/top-places.svg"
+                        alt="Top Places"
+                        class="hero__badge-places-icon"
+                        width="24"
+                        height="24"
+                      />
+                      <span>Top Places</span>
+                    </div>
+                  </div>
+                  <div class="hero__image hero__image--3">
+                    <img
+                      src="assets/images/hero/hero-2.png"
+                      alt="Mountain hiking"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+          <div class="container">
+            <div class="partners__wrapper">
+              <div class="partners__logo">
+                <img
+                  src="assets/images/partners/tripadvisor.svg"
+                  alt="TripAdvisor"
+                />
+              </div>
+              <div class="partners__logo">
+                <img src="assets/images/partners/expedia.svg" alt="Expedia" />
+              </div>
+              <div class="partners__logo">
+                <img
+                  src="assets/images/partners/booking-com.svg"
+                  alt="Booking.com"
+                />
+              </div>
+              <div class="partners__logo">
+                <img src="assets/images/partners/airbnd.svg" alt="Airbnb" />
+              </div>
+              <div class="partners__logo">
+                <img src="assets/images/partners/rbitz.svg" alt="Orbitz" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Decorative triangles -->
+        <div class="hero__triangles">
+          <div class="hero__triangle">
+            <img
+              src="assets/images/hero/hero__triangle.svg"
+              alt="Triangle"
+              class="hero__triangle-icon"
+            />
+          </div>
+        </div>
+        <div class="yellow-decoration yellow-decoration--bottom-right"></div>
+      </div>
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <div class="services__wrapper">
+                    <!-- Left Content -->
+                    <div class="section__content">
+                        <span class="section__label">SERVICES</span>
+                        <h2 class="section__title">Our top value categories for you</h2>
+                    </div>
+                    
+                    <!-- Right Cards - Swiper Container -->
+                    <div class="services__slider-wrapper">
+                        <div class="services__cards swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Service Card 1 -->
+                                <div class="swiper-slide">
+                                    <div class="service-card">
+                                        <div class="service-card__icon">
+                                          <img src="assets/images/services/tour-guide.svg" alt="Best Tour Guide">
+                                        </div>
+                                        <h3 class="service-card__title">Best Tour Guide</h3>
+                                        <p class="service-card__description">What looked like a small patch of purple grass, above five feet.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Service Card 2 -->
+                                <div class="swiper-slide">
+                                    <div class="service-card">
+                                        <div class="service-card__icon">
+                                            <img src="assets/images/services/easy-booking.svg" alt="Best Tour Guide">
+                                        </div>
+                                        <h3 class="service-card__title">Easy Booking</h3>
+                                        <p class="service-card__description">Square, was moving across the sand in their direction.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Service Card 3 -->
+                                <div class="swiper-slide">
+                                    <div class="service-card">
+                                        <div class="service-card__icon">
+                                            <img src="assets/images/services/cloudy.svg" alt="Best Tour Guide">
+                                        </div>
+                                        <h3 class="service-card__title">Weather Forecast</h3>
+                                        <p class="service-card__description">What looked like a small patch of purple grass, above five feet.</p>
+                                    </div>
+                                </div>
+                                 <!-- Service Card 1 -->
+                                 <div class="swiper-slide">
+                                    <div class="service-card">
+                                        <div class="service-card__icon">
+                                          <img src="assets/images/services/tour-guide.svg" alt="Best Tour Guide">
+                                        </div>
+                                        <h3 class="service-card__title">Best Tour Guide</h3>
+                                        <p class="service-card__description">What looked like a small patch of purple grass, above five feet.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Service Card 2 -->
+                                <div class="swiper-slide">
+                                    <div class="service-card">
+                                        <div class="service-card__icon">
+                                            <img src="assets/images/services/easy-booking.svg" alt="Best Tour Guide">
+                                        </div>
+                                        <h3 class="service-card__title">Easy Booking</h3>
+                                        <p class="service-card__description">Square, was moving across the sand in their direction.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Service Card 3 -->
+                                <div class="swiper-slide">
+                                    <div class="service-card">
+                                        <div class="service-card__icon">
+                                            <img src="assets/images/services/cloudy.svg" alt="Best Tour Guide">
+                                        </div>
+                                        <h3 class="service-card__title">Weather Forecast</h3>
+                                        <p class="service-card__description">What looked like a small patch of purple grass, above five feet.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Destination Section -->
+        <section class="destinations">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="destinations__header">
+                    <div class="section__content">
+                        <span class="section__label">TOP DESTINATION</span>
+                        <h2 class="section__title">Explore top destination</h2>
+                    </div>
+                    
+                    <!-- Navigation Buttons -->
+                    <div class="destinations__navigation">
+                        <button class="destinations__nav-btn destinations__nav-btn--prev" aria-label="Previous slide">
+                            <img src="assets/images/destinations/arrow-left.svg" alt="Previous" width="24" height="24">
+                        </button>
+                        <button class="destinations__nav-btn destinations__nav-btn--next" aria-label="Next slide">
+                            <img src="assets/images/destinations/arrow-right.svg" alt="Next" width="24" height="24">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Slider -->
+                <div class="destinations__slider-wrapper position-relative">
+                  <img src="assets/images/destinations/destination-bg.svg" alt="Background" class="destinations__slider-bg">
+                    <div class="destinations__slider swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Destination Card 1 -->
+                            <div class="swiper-slide">
+                                <div class="destination-card">
+                                    <div class="destination-card__image">
+                                        <img src="assets/images/destinations/Bantayan.png" alt="Paradise Beach, Bantayan Island">
+                                    </div>
+                                    <div class="destination-card__content">
+                                        <div class="destination-card__header">
+                                            <h3 class="destination-card__title">Paradise Beach, Bantayan Island</h3>
+                                            <span class="destination-card__price">$550.16</span>
+                                        </div>
+                                        <p class="destination-card__location">Rome, Italy</p>
+                                        <div class="destination-card__rating">
+                                            <span class="destination-card__rating-score">4.8</span>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 0L12.9389 6.90983L20 8.09017L15 13.0902L16.1803 20L10 16.5098L3.81966 20L5 13.0902L0 8.09017L7.06107 6.90983L10 0Z" fill="#FF5722"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Destination Card 2 -->
+                            <div class="swiper-slide">
+                                <div class="destination-card">
+                                    <div class="destination-card__image">
+                                        <img src="assets/images/destinations/Ocean.png" alt="Ocean with full of Colors">
+                                    </div>
+                                    <div class="destination-card__content">
+                                        <div class="destination-card__header">
+                                            <h3 class="destination-card__title">Ocean with full of Colors</h3>
+                                            <span class="destination-card__price">$20.99</span>
+                                        </div>
+                                        <p class="destination-card__location">Maldives</p>
+                                        <div class="destination-card__rating">
+                                            <span class="destination-card__rating-score">4.5</span>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 0L12.9389 6.90983L20 8.09017L15 13.0902L16.1803 20L10 16.5098L3.81966 20L5 13.0902L0 8.09017L7.06107 6.90983L10 0Z" fill="#FF5722"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Destination Card 3 -->
+                            <div class="swiper-slide">
+                                <div class="destination-card">
+                                    <div class="destination-card__image">
+                                        <img src="assets/images/destinations/Mountain.png" alt="Mountain View, Above the cloud">
+                                    </div>
+                                    <div class="destination-card__content">
+                                        <div class="destination-card__header">
+                                            <h3 class="destination-card__title">Mountain View, Above the cloud</h3>
+                                            <span class="destination-card__price">$150.99</span>
+                                        </div>
+                                        <p class="destination-card__location">United Arab Emeries</p>
+                                        <div class="destination-card__rating">
+                                            <span class="destination-card__rating-score">5.0</span>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 0L12.9389 6.90983L20 8.09017L15 13.0902L16.1803 20L10 16.5098L3.81966 20L5 13.0902L0 8.09017L7.06107 6.90983L10 0Z" fill="#FF5722"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="destination-card">
+                                  <div class="destination-card__image">
+                                      <img src="assets/images/destinations/Bantayan.png" alt="Paradise Beach, Bantayan Island">
+                                  </div>
+                                  <div class="destination-card__content">
+                                      <div class="destination-card__header">
+                                          <h3 class="destination-card__title">Paradise Beach, Bantayan Island</h3>
+                                          <span class="destination-card__price">$550.16</span>
+                                      </div>
+                                      <p class="destination-card__location">Rome, Italy</p>
+                                      <div class="destination-card__rating">
+                                          <span class="destination-card__rating-score">4.8</span>
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M10 0L12.9389 6.90983L20 8.09017L15 13.0902L16.1803 20L10 16.5098L3.81966 20L5 13.0902L0 8.09017L7.06107 6.90983L10 0Z" fill="#FF5722"/>
+                                          </svg>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Point Section -->
+        <section class="travel-point">
+            <div class="container">
+                <div class="travel-point__wrapper">
+                    <!-- Left Side - Image -->
+                    <div class="travel-point__image-wrapper">
+                        <div class="travel-point__bg-circle"></div>
+                        <div class="position-relative">
+                        <img 
+                            src="assets/images/travel-point/traveler.png" 
+                            alt="Traveler with backpack" 
+                            class="travel-point__image"
+                        />
+                        </div>
+                        <!-- Discounted Price Badge -->
+                        <div class="travel-point__badge">
+                            <img 
+                                src="assets/images/travel-point/discount-icon.svg" 
+                                alt="Discount"
+                                width="40"
+                                height="40"
+                            />
+                            <span>Discounted Price</span>
+                        </div>
+                        <!-- Decorative Dots -->
+                        <div class="travel-point__dot travel-point__dot--purple-1"></div>
+                        <div class="travel-point__dot travel-point__dot--purple-2"></div>
+                        <div class="travel-point__dot travel-point__dot--yellow-1"></div>
+                        <div class="travel-point__dot travel-point__dot--orange-1"></div>
+                        <div class="travel-point__dot travel-point__dot--red-1"></div>
+                    </div>
+
+                    <!-- Right Side - Content -->
+                    <div class="travel-point__content">
+                        <span class="section__label">TRAVEL POINT</span>
+                        <h2 class="section__title">We helping you find your dream location</h2>
+                        <p class="travel-point__description">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.
+                        </p>
+
+                        <!-- Stats Grid -->
+                        <div class="travel-point__stats">
+                            <div class="travel-point__stat-card">
+                                <span class="travel-point__stat-number">500+</span>
+                                <span class="travel-point__stat-label">Holiday Package</span>
+                            </div>
+                            <div class="position-relative">
+                                <!-- Decorative Star Badge -->
+                         <div class="travel-point__star-badge">
+                           <img 
+                               src="assets/images/travel-point/star-badge.svg" 
+                               alt="Star"
+                               width="48"
+                               height="48"
+                           />
+                         
+                      </div>
+                      <div class="travel-point__stat-card">
+                        <span class="travel-point__stat-number">100</span>
+                        <span class="travel-point__stat-label">Luxury Hotel</span>
+                    </div>
+                            </div>
+                            
+                            <div class="travel-point__stat-card">
+                                <span class="travel-point__stat-number">7</span>
+                                <span class="travel-point__stat-label">Premium Airlines</span>
+                            </div>
+                            <div class="travel-point__stat-card">
+                                <span class="travel-point__stat-number">2k+</span>
+                                <span class="travel-point__stat-label">Happy Customer</span>
+                            </div>
+                        </div>
+
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <!-- Footer Brand -->
+                <div class="footer__brand">
+                    <div class="logo">
+                        <img src="assets/images/logo.svg" alt="Travlog Logo" class="logo__icon" />
+                    </div>
+                    <p class="footer__description">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer__links">
+                    <!-- Company -->
+                    <div class="footer__column">
+                        <h3 class="footer__column-title">Company</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">About</a></li>
+                            <li><a href="#" class="footer__link">Career</a></li>
+                            <li><a href="#" class="footer__link">Mobile</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="footer__column">
+                        <h3 class="footer__column-title">Contact</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Why Travlog?</a></li>
+                            <li><a href="#" class="footer__link">Partner with us</a></li>
+                            <li><a href="#" class="footer__link">FAQ's</a></li>
+                            <li><a href="#" class="footer__link">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Meet Us -->
+                    <div class="footer__column">
+                        <h3 class="footer__column-title">Meet Us</h3>
+                        <ul class="footer__list">
+                            <li><a href="tel:+0092123456789" class="footer__link">+00 92 1234 56789</a></li>
+                            <li><a href="mailto:info@travlog.com" class="footer__link">info@travlog.com</a></li>
+                            <li><span class="footer__link">205. R Street, New York<br>BD23200</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/swiper-init.js"></script>
+  </body>
+</html>

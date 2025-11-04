@@ -1,0 +1,128 @@
+/* ================================================
+   CSS Variables - Colors, Fonts, Spacing
+   ================================================ */
+
+/* Import Google Fonts - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Import Local Fonts */
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/circular-std/CircularStd-Book.woff2') format('woff2'),
+         url('../fonts/circular-std/CircularStd-Book.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/circular-std/CircularStd-Medium.woff2') format('woff2'),
+         url('../fonts/circular-std/CircularStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/circular-std/CircularStd-Black.woff2') format('woff2'),
+         url('../fonts/circular-std/CircularStd-Black.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* RGB Base Colors (for easy opacity control) */
+
+    --rgb-primary: 93, 80, 198;
+    --rgb-primary-dark: 74, 63, 181;
+    --rgb-secondary: 248, 94, 159;
+    --rgb-accent: 250, 205, 73;
+    --rgb-text-base: 25, 24, 37;
+    --rgb-white: 255, 255, 255;
+    --rgb-black: 0, 0, 0;
+   
+
+    
+    /* Primary Colors */
+    --color-primary: rgba(var(--rgb-primary), 1);
+    --color-primary-dark: rgba(var(--rgb-primary-dark), 1);
+    --color-secondary: rgba(var(--rgb-secondary), 1);
+    --color-accent: rgba(var(--rgb-accent), 1);
+    --color-gradient: linear-gradient(280.84deg, rgba(var(--rgb-primary), 1) 7.11%, rgba(var(--rgb-secondary), 1) 93.54%);
+    
+    /* Text Colors */
+    --color-text-heading: rgba(var(--rgb-text-base), 1);
+    --color-text-body: rgba(var(--rgb-text-base), 0.5);
+    --color-text-secondary: rgba(var(--rgb-text-base), 0.75);
+    --color-white: rgba(var(--rgb-white), 1);
+    
+    /* Background Colors */
+    --color-bg-white: rgba(var(--rgb-white), 1);
+    --color-bg-light: rgba(var(--rgb-accent), 0.08);
+    --color-bg-accent: rgba(var(--rgb-accent), 0.08);
+    
+    /* Font Family */
+    --font-primary: 'Circular Std',  sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    
+    /* Font Sizes */
+    --fs-14: 14px;
+    --fs-16: 16px;
+    --fs-17: 17px;
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --fs-23: 23px;
+    --fs-28: 28px;
+    --fs-32: 32px;
+    --fs-35: 35px;
+    --fs-44: 44px;
+    --fs-69: clamp(40px, 5vw, 69px);
+    
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    
+    /* Spacing */
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 40px;
+    --spacing-3xl: 48px;
+    
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 100px;
+    --radius-full: 50%;
+    
+    /* Shadows */
+    --shadow-sm: 0px 2px 8px rgba(var(--rgb-black), 0.08);
+    --shadow-md: 0px 4px 16px rgba(var(--rgb-black), 0.1);
+    --shadow-lg: 0px 8px 24px rgba(var(--rgb-black), 0.12);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    /* Container Width */
+    --container-width: 1200px;
+    --container-padding: 24px;
+}
+
+
+/* Large Desktop */
+/* @media screen and (min-width: 1440px) {
+    :root {
+        --container-width: 1320px;
+    }
+} */
+
+

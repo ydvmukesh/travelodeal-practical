@@ -1,0 +1,82 @@
+/* ================================================
+   BASE STYLES - Element Defaults & Resets
+   SMACSS: Base Layer
+   ================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 80px; /* Compensate for fixed header */
+    /* line-height: 120%; */
+    overflow-x: hidden;
+    font-family: var(--font-primary);
+    font-size: var(--fs-17);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text-body);
+    background-color: var(--color-bg-white);
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-heading);
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+    margin: 0;
+}
+
+/* Apply Inter Font to Paragraphs and Divs */
+p {
+    font-family: var(--font-inter);
+    line-height: 150%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.position-relative{
+    position: relative;
+}

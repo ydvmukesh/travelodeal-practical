@@ -1,0 +1,156 @@
+/* ================================================
+   BUTTON MODULE - Reusable Button Components
+   SMACSS: Module Layer
+   ================================================ */
+
+/* ================================================
+   Base Button
+   ================================================ */
+.btn {
+    padding: 15px clamp(26px, 2.5vw, 32px);
+    font-size: var(--fs-14);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+}
+
+/* ================================================
+   Button Variants
+   ================================================ */
+.btn--primary {
+    color: var(--color-white);
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    box-shadow: 0px 8px 16px rgba(93, 80, 198, 0.25);
+    
+}
+
+.btn--primary:hover {
+    background: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-dark);
+    box-shadow: 0px 12px 24px rgba(93, 80, 198, 0.35);
+}
+
+/* .btn--secondary */
+.btn--secondary {
+    color: var(--color-white);
+    background: var(--color-text-heading);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn--secondary:hover {
+    background: var(--color-text-body);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* btn--ghost */
+.btn--ghost {
+    color: var(--color-text-heading);
+    background-color: transparent;
+    border: 1px solid rgba(238, 238, 238, 1)
+}
+
+.btn--ghost:hover {
+    color: var(--color-primary);
+    background-color: rgba(93, 80, 198, 0.05);
+}
+
+/* btn--outline */
+.btn--outline {
+    color: var(--color-primary);
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+}
+
+.btn--outline:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+/* Legacy alias for btn--ghost */
+.btn--login {
+    color: var(--color-text-heading);
+    background-color: transparent;
+}
+
+.btn--login:hover {
+    color: var(--color-primary);
+}
+
+/* ================================================
+   Button Sizes
+   ================================================ */
+.btn--sm {
+    padding: 10px 20px;
+    font-size: var(--fs-13);
+}
+
+.btn--lg {
+    padding: 17px 40px;
+    font-size: var(--fs-16);
+}
+
+/* ================================================
+   Button Effects - Mix and match with variants
+   ================================================ */
+.btn--lift:hover {
+    transform: translateY(-2px);
+}
+
+.btn--lift:active {
+    transform: translateY(0);
+}
+
+.btn--scale:hover {
+    transform: scale(1.05);
+}
+
+.btn--scale:active {
+    transform: scale(0.98);
+}
+
+.btn--shadow-sm {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn--shadow-md {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn--shadow-lg {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================================
+   Button Elements (BEM)
+   ================================================ */
+.btn__icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* ================================================
+   Button Responsive Styles
+   ================================================ */
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .btn--login {
+        border: 2px solid #E8E8E8;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .btn {
+        padding: 14px 20px;
+        font-size: var(--font-size-sm);
+    }
+}
+
