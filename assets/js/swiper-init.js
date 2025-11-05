@@ -94,3 +94,55 @@ const destinationsSwiper = new Swiper('.destinations__slider', {
     speed: 700,
 });
 
+// Testimonials Swiper Slider
+const testimonialsSwiper = new Swiper('.testimonials__slider', {
+    // Swiper configuration
+    slidesPerView: 1,
+    spaceBetween: 32,
+    loop: true,
+    grabCursor: true,
+    centeredSlides: true,
+    
+    // Navigation
+    navigation: {
+        nextEl: '.testimonials__nav-btn--next',
+        prevEl: '.testimonials__nav-btn--prev',
+    },
+    
+    // Pagination
+    pagination: {
+        el: '.testimonials__pagination',
+        clickable: true,
+    },
+    
+    // Autoplay
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+    
+    // Responsive breakpoints
+    breakpoints: {
+        // When window width is >= 480px
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+        },
+        // When window width is >= 768px
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+        },
+        // When window width is >= 992px
+        992: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+        },
+    },
+    
+    // Effects
+    effect: 'slide',
+    speed: 800,
+});
+

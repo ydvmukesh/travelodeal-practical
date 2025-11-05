@@ -74,11 +74,12 @@
     --fs-17: 17px;
     --fs-18: 18px;
     --fs-20: 20px;
-    --fs-23: 23px;
-    --fs-28: 28px;
-    --fs-32: 32px;
-    --fs-35: 35px;
-    --fs-44: 44px;
+    --fs-23: clamp(18px, 2vw, 23px);
+    --fs-28: clamp(23px, 2vw, 28px);
+    --fs-32: clamp(28px, 3vw, 32px);
+    --fs-35: clamp(30px, 3vw, 35px);
+    --fs-44: clamp(35px, 4vw, 44px);
+    --fs-55: clamp(38px, 4vw, 55px);
     --fs-69: clamp(40px, 5vw, 69px);
     
     /* Font Weights */

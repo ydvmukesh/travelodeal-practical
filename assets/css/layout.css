@@ -92,6 +92,13 @@ main{overflow: clip;}
    .footer {
     padding-block: clamp(50px, 6vw + 20px, 80px);
 }
+.footer__background {
+    position: absolute;
+    right: 0;
+    top: -200px;
+    z-index: -1;
+    max-width: 100%;
+}
 
 .footer__wrapper {
     display: grid;
@@ -204,12 +211,11 @@ main{overflow: clip;}
 }
 
 @media screen and (max-width: 480px) {
-    .footer__links {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
+   
     
     .footer__column:last-child {
         grid-column: auto;
     }
+    .footer__background {   max-width: 90px;
+    width: 100%;}
 }
