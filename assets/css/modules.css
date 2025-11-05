@@ -217,11 +217,11 @@
         padding: 14px 0;
     }
     
-    .mobile-menu-toggle {
+    /* .mobile-menu-toggle {
         width: 28px;
         height: 22px;
         gap: 4px;
-    }
+    } */
     
     .mobile-menu-toggle__bar {
         height: 2.5px;
@@ -552,7 +552,7 @@
    
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
     .hero {
         padding: 40px 0 60px;
         min-height: auto;
@@ -1380,6 +1380,7 @@
 .key-features {
     padding-block: clamp(50px, 6vw + 20px, 100px)  clamp(80px, 9vw + 20px, 200px);
     position: relative;
+    z-index: 1;
 }
 
 .key-features__wrapper {
@@ -1705,7 +1706,7 @@ border: 1px solid transparent;
         right: 60px;
         top: 30px;
     }
-    .feature-card__title{
+    .feature-card__title, .feature-card__description{
         text-align: center;
     }
 }
